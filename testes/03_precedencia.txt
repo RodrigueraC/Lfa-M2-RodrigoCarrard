@@ -1,0 +1,11 @@
+Show(10 + 11 * 10);
+Show((10 + 11) * 10);
+Show(10 ^ 11 ^ 10);
+Show((10 ^ 11) ^ 10);
+Show(1000 - 10 - 1);
+Show(10000 / 10 / 10);
+Show(10 * 10 ^ 11);
+Show(log(10 ^ 1010) + 1);
+Valor_1 = 101;
+Valor_1 = Valor_1 * Valor_1;
+Show(Valor_1);

@@ -1,0 +1,33 @@
+#Options
+GenerateScanner = true
+GenerateParser = true
+Language = Java
+ScannerName = Lexico
+ParserName = Sintatico
+SemanticName = Semantico
+Package = gals
+ScannerCaseSensitive = true
+ScannerTable = Compact
+Input = Stream
+Parser = SLR
+#RegularDefinitions
+
+#Tokens
+ :[\ \n\t\r\s]+
+numeros: [0-9]+
+soma: \+
+subtracao: \-
+imprimir: imprimir
+capturar: capturar
+#NonTerminals
+<lista_comandos>
+<comando>
+<calculos>
+<calculo>
+<valor>
+#Grammar
+<lista_comandos> ::= <comando> <lista_comandos> | <comando>;
+<comando> ::= imprimir #1|  <valor> <calculos>;
+<calculos> ::= <calculos><calculo> | <calculo>;
+<calculo> ::= soma <valor> #4| subtracao <valor> #5 ;
+<valor> ::= numeros #3 | capturar #2;

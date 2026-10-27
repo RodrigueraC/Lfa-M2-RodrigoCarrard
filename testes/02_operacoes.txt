@@ -1,0 +1,11 @@
+A = 1100;
+B = 11;
+Show(A + B);
+Show(A - B);
+Show(A * B);
+Show(A / B);
+Show(111 / 10);
+Show(10 ^ 11);
+Show(log(1000));
+Show(log(1100));
+Show(log(1));
